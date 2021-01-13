@@ -1,0 +1,69 @@
+h2{
+color:black;
+margin: 20px;
+padding:10px;   
+font-size: 30px;  
+}
+.menu{
+/*background: skyblue;*/
+margin-right:30px;
+}
+.menu a{
+margin-left:20px;    
+}
+.header{
+text-align: center;
+justify-content: space-evenly;   
+/*background-image:linear-gradient(to right,red,orange,yellow); */ 
+}
+.grid{
+display: flex; 
+flex-wrap: wrap;
+justify-content: space-evenly;   
+}
+.footer{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+margin:30px;
+padding:20px;  
+}
+p,h2{
+text-align: center;  
+}
+.footer img{
+border-radius: 25px;   
+}
+body{
+background-image: url("Icons/background.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; 
+}
+a:link{
+color:white;    
+}
+a:visited{
+color:red;    
+}
+.item{
+position:relative;    
+}
+.item p{
+position:absolute;
+color:cyan;
+text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+opacity: 0;
+}
+.item:hover p{
+opacity: 1;
+}  
+.item:hover img{
+opacity:0.5; 
+border:5px solid;
+border-color:orange;   
+box-shadow: 5px 10px black;
+}  
